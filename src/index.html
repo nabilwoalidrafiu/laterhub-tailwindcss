@@ -48,81 +48,87 @@
                 <li><a class="text-blue-700 bg-gray-300 px-2 py-3 mr-[10px] hover:bg-blue-600 hover:text-white rounded transition duration-300" href="">Linkedin Login (Optional)</a></li>
             </ul>
         </nav>
-      <!-- large device -->
-        <button class="block md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              
-        </button>
-    </header>
-<!-- baiter -->
-    <header class="flex justify-between bg-slate-800 text-white px-4">
-        <div class="block py-navbar-item">
-            <a href="">
-                Logo
-            </a>
-        </div>
-        <div class="block fixed top-0 left-0 bottom-0 h-full w-[220px] bg-slate-900 shadow-2xl md:hidden ">
-            <ul class="">
-                <li><a href="/src/index.html" class="flex items-center py-2 px-navbar-item transition-all hover:bg-slate-700">
-                   
-                    Browse Jobs</a></li>
-                <li><a href="#" class="block py-2 px-navbar-item transition-all hover:bg-slate-700">Browse Law Firms</a></li>
-                <li><a href="#" class="block py-2 px-navbar-item transition-all hover:bg-slate-700">Resources</a></li>
-            </ul>
-            <ul class="">
-                    
-            About</a></li>
-            <li><a href="/src/profile.html" class="flex items center py-2 px-4 transition-all hover:bg-slate-700">
-                FAQ</a></li>
-                <li class="relative">
-                    <a href="" class="flex justify-between items-center py-2 px-navbar-item transition-all hover:bg-slate-700">Contact
+      <!-- /large device -->
+        <div class="flex justify-between items-center">
+            <button class="block xl:hidden mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                  </svg>
                   
+                  
+            </button>
+              <button id="toggle_btn" class="block xl:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  
+            </button>
+        </div>
+    </header>
+<!-- responsive menu mobile -->
+    <header id="menu_bar" class="hidden flex justify-between bg-slate-800 text-white px-6">
+        <div class="block py-navbar-item">
+          
+        </div>
+        <div class="block fixed top-0 left-0 bottom-0 h-full w-[300px] bg-slate-900 shadow-2xl ">
+            <ul class="">
+                <div>
+                    <li class="bg-white py-4 flex justify-between"><a href="#"><img class=" w-2/3" src="/src/img/logo2.png" alt="">
                     </a>
-                    <ul class="w-full bg-slate-800">
-                        <li><a href="/src/profile.html" class="flex items center py-2 px-4 transition-all hover:bg-slate-700">
-                            FAQ</a></li>
-                        <li><a href="/src/watchlist.html" class="flex items-center py-2 px-4 transition-all hover:bg-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                              </svg>
-                              
-                            Watchlist</a></li>
-                        <li><a href="/src/orders.html" class="flex items-center py-2 px-4 transition-all hover:bg-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
-                              </svg>
-                              
-                            Orders</a></li>
-                        <li><a href="/src/logout.html" class="flex items-center py-2 px-4 transition-all hover:bg-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                              </svg>
-                              
-                            Logout</a></li>
-                    </ul>
+                    <button id="cross_btn" class="block">
+                        
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black ml-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                          
+                          
+                    </button>
                 </li>
-                <li class="mt-3"><a href="/src/login.html" class="flex items-center py-2 px-navbar-item transition-all hover:bg-slate-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
-                      </svg>
-                      
-                    Login</a></li>
-                <li class="px-3"><a href="/src/signup.html" class="flex items-center btn-emerald">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                      </svg>
-                      
-                    Signup for Free</a></li>
+                </div>
+                <li><a href="#" class="flex flex-row justify-between items-center text-gray-200 px-8 py-2 px-navbar-item transition-all hover:bg-slate-700">Browse Jobs<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                  </a></li>
+                <li><a href="#" class="block px-8 py-2 px-navbar-item transition-all hover:bg-slate-700">Browse Law Firms</a></li>
+                <li><a href="#" class="flex flex-row justify-between items-center  px-8 py-2 px-navbar-item transition-all hover:bg-slate-700">Resources<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                  </a></li>
+                <li><a href="#" class="block px-8 py-2 px-navbar-item transition-all hover:bg-slate-700">About</a></li>
+                <li><a href="#" class="block px-8 py-2 px-navbar-item transition-all hover:bg-slate-700">Contact</a></li>
+                <li><a href="#" class="block px-8 py-2 px-navbar-item transition-all hover:bg-slate-700">FAQ</a></li>
+
             </ul>
+            <ul class="py-10 px-4 mt-10">
+                <li>1250 Broadway, Floor 36</li>
+                <li>New York, NY 10001</li>
+                <li>New York, NY 10001</li>
+            </ul>
+            <div class="flex justify-start items-center space-x-4 py-10 px-4">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-6 h-6 text-gray-500 hover:text-gray-400 transition duration-300">
+                    <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                  </svg>
+                </a>
+               <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6 h-6 text-gray-500 hover:text-gray-400 transition duration-300">
+                    <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                  </svg>
+               </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6 h-6 text-gray-500 hover:text-gray-400 transition duration-300">
+                        <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                      </svg>
+                </a>
+              
+            </div>
         </div>
         <!-- desktop-content -->
     
    
         
     </header>
-<!-- bairer -->
+<!-- /responsive menu mobile -->
     <!-- 2nd -->    
     <section>
         <div class="bg-cover bg-no-repeat h-full" style="background-image:url(/src/img/bg_img.jpg)">
@@ -682,23 +688,23 @@
     <!-- 8th -->
         <section class="pt-10 px-0">
             <div class="grid grid-cols-1 md:grid-cols-3 justify-center">
-                <div class="bg-white h-60">
+                <div class="bg-white">
                   <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
                     <img class="" src="/src/img/company1.jpg" alt=""/>
                   </a>
                   <div class="p-6 bg-cyan-100">
-                    <h5 class="text-blue-600 font-bold text-3xl font-medium mb-2">Top-tier firms currently pay an average of $60K - $125K per hire</h5>
+                    <h5 class="text-blue-600 font-bold text-3xl  mb-2">Top-tier firms currently pay an average of $60K - $125K per hire</h5>
                     <p class="text-blue-600 font-semibold text-base mb-4">
                         Firms can avoid these recruiting fees by hiring candidates directly through Lateral Hub
                     </p>
                   </div>
                 </div>
-                <div class="bg-white h-60>
+                <div class="bg-white">
                     <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
                       <img class="" src="/src/img/company2.jpg" alt=""/>
                     </a>
                     <div class="p-6 bg-cyan-100">
-                      <h5 class="text-blue-600 font-bold text-3xl font-medium mb-2">"Given the price point, joining Lateral Hub is a no-brainer for firms."</h5>
+                      <h5 class="text-blue-600 font-bold text-3xl  mb-2">"Given the price point, joining Lateral Hub is a no-brainer for firms."</h5>
                       <p class="text-blue-600 font-semibold text-base mb-4">
                         – Director of Recruiting at AmLaw 50 firm
                       </p>
@@ -709,7 +715,7 @@
                       <img class="" src="/src/img/company3.jpg" alt=""/>
                     </a>
                     <div class="p-6 bg-cyan-100">
-                      <h5 class="text-blue-600 font-bold text-3xl font-medium mb-2">T"When we save on recruiting fees, we're able to provide a higher signing bonus to the candidate."</h5>
+                      <h5 class="text-blue-600 font-bold text-3xl mb-2">T"When we save on recruiting fees, we're able to provide a higher signing bonus to the candidate."</h5>
                       <p class="text-blue-600 font-semibold text-base mb-4">
                         – Recruiting Manager at AmLaw 100 firm
                       </p>
@@ -771,9 +777,9 @@
                 </div>
                 <div class="col-span-2">
                     <h1 class="font-bold text-3xl py-4">From the Lateral Hub Resource Library</h1>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 justify-center ">
-                        <div class="flex justify-center ">
-                            <div class="rounded-2xl shadow-lg bg-white max-w-sm transition-all hover:shadow-2xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 justify-center w-full">
+                        <div class="flex justify-center items-center">
+                            <div class="rounded-2xl shadow-lg bg-white transition-all hover:shadow-2xl">
                               <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
                                 <img class="rounded-t-lg w-full transition hover:opacity-90" src="/src/img/mission1.jpg" alt=""/>
                               </a>
@@ -790,7 +796,7 @@
                             </div>
                           </div>
                           <div class="flex justify-center">
-                            <div class="rounded-lg shadow-lg bg-white max-w-sm transition-all hover:shadow-2xl">
+                            <div class="rounded-lg shadow-lg bg-white transition-all hover:shadow-2xl">
                               <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
                                 <img class="rounded-t-lg w-full transition hover:opacity-90" src="/src/img/mission2.jpg" alt=""/>
                               </a>
@@ -807,7 +813,7 @@
                             </div>
                           </div>
                           <div class="flex justify-center">
-                            <div class="rounded-lg shadow-lg bg-white max-w-sm transition-all hover:shadow-2xl">
+                            <div class="rounded-lg shadow-lg bg-white transition-all hover:shadow-2xl">
                               <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
                                 <img class="rounded-t-lg w-full transition hover:opacity-90" src="/src/img/mission3.jpg" alt=""/>
                               </a>
@@ -824,7 +830,7 @@
                             </div>
                           </div>
                           <div class="flex justify-center">
-                            <div class="rounded-lg shadow-lg bg-white max-w-sm transition-all hover:shadow-2xl">
+                            <div class="rounded-lg shadow-lg bg-white transition-all hover:shadow-2xl">
                               <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
                                 <img class="rounded-t-lg w-full transition hover:opacity-90" src="/src/img/mission4.jpg" alt=""/>
                               </a>
@@ -907,5 +913,16 @@
    
        
       </div>
+      <script>
+        const toggleBtn = document.getElementById("toggle_btn");
+        const menuBar = document.getElementById("menu_bar");
+        const crossBtn = document.getElementById("cross_btn")
+        toggleBtn.onclick = () => {
+            menuBar.style.display = "block"
+        }
+        crossBtn.onclick = () => {
+            menuBar.style.display = "none";
+        }
+      </script>
 </body>
 </html>
